@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+databases
+sqlalchemy
+pydantic-settings
+alembic
+fastapi-pagination
+psycopg2-binary
