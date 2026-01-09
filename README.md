@@ -4,6 +4,9 @@ Uma API RESTful moderna e assíncrona construída com **FastAPI** para gerenciar
 
 ## 📋 O que é essa API?
 
+<img width="2752" height="1536" alt="image" src="https://github.com/user-attachments/assets/bd501a75-a0b9-48ba-ad6c-bbd21b2e918c" />
+
+
 Esta API permite:
 - **Criar atletas** com nome, CPF, centro de treinamento e categoria
 - **Listar atletas** com filtros por nome e CPF
