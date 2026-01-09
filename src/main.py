@@ -37,27 +37,32 @@ tags_metadata = [
 
 
 app = FastAPI(
-    title="API de Transações",
+    title="API de Gestão de Atletas e Transações",
     version="1.0.0",
-    summary="Microsserviço para manter operações de saque e depósito de contas correntes.",
+    summary="Microsserviço para gerenciar atletas, centros de treinamento e transações de contas correntes.",
     description="""
-A API de Transações é o microsserviço para registrar transações de contas correntes. 💸💰
+A API de Gestão de Atletas e Transações é um microsserviço completo para registrar e manter dados de atletas e suas atividades em centros de treinamento. 🏋️💪
+
+## Atleta
+
+* **Criar atletas**.
+* **Listar atletas com filtros (nome, CPF)**.
+* **Paginação com limit e offset**.
 
 ## Conta
 
-* **Criar contas**.
+* **Criar contas correntes**.
 * **Listar contas**.
 * **Listar transações da conta por ID**.
 
 ## Transação
 
-* **Criar transações**.
+* **Registrar depósitos e saques**.
+* **Consultar histórico de transações**.
 
-## Atleta
+## Autenticação
 
-* **Criar atletas**.
-* **Listar atletas com filtros (nome, cpf)**.
-* **Paginação com limit e offset**.
+* **Fazer login** para obter token JWT (para operações protegidas).
 """,
     openapi_tags=tags_metadata,
     redoc_url=None,
