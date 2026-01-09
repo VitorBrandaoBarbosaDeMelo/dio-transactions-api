@@ -41,24 +41,13 @@ app = FastAPI(
     version="1.0.0",
     summary="Microsserviço para gerenciar atletas e centros de treinamento.",
     description="""
-A API de Gestão de Atletas e Transações é um microsserviço completo para registrar e manter dados de atletas e suas atividades em centros de treinamento. 🏋️💪
+A API de Gestão de Atletas é um microsserviço para registrar e manter dados de atletas e seus centros de treinamento. 🏋️💪
 
 ## Atleta
 
 * **Criar atletas**.
 * **Listar atletas com filtros (nome, CPF)**.
 * **Paginação com limit e offset**.
-
-## Conta
-
-* **Criar contas correntes**.
-* **Listar contas**.
-* **Listar transações da conta por ID**.
-
-## Transação
-
-* **Registrar depósitos e saques**.
-* **Consultar histórico de transações**.
 
 ## Autenticação
 
