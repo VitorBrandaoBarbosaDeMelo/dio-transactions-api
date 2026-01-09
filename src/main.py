@@ -37,9 +37,9 @@ tags_metadata = [
 
 
 app = FastAPI(
-    title="API de Gestão de Atletas e Transações",
+    title="API de Gestão de Atletas",
     version="1.0.0",
-    summary="Microsserviço para gerenciar atletas, centros de treinamento e transações de contas correntes.",
+    summary="Microsserviço para gerenciar atletas e centros de treinamento.",
     description="""
 A API de Gestão de Atletas e Transações é um microsserviço completo para registrar e manter dados de atletas e suas atividades em centros de treinamento. 🏋️💪
 
