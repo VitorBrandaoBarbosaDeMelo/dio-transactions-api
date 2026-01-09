@@ -1,12 +1,11 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, HTTPException
 from sqlalchemy.exc import IntegrityError
 
 from src.schemas.athlete import AtletaIn
 from src.views.athlete import AtletaOut
 from src.services.atleta import AtletaService
-from src.security import login_required
 
-router = APIRouter(prefix="/atletas", dependencies=[Depends(login_required)])
+router = APIRouter(prefix="/atletas")
 
 service = AtletaService()
 

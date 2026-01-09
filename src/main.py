@@ -19,35 +19,45 @@ async def lifespan(app: FastAPI):
 tags_metadata = [
     {
         "name": "auth",
-        "description": "Operations for authentication.",
+        "description": "Operações de autenticação.",
     },
     {
         "name": "account",
-        "description": "Operations to maintain accounts.",
+        "description": "Operações para manter contas.",
     },
     {
         "name": "transaction",
-        "description": "Operations to maintain transactions.",
+        "description": "Operações para manter transações.",
+    },
+    {
+        "name": "atleta",
+        "description": "Operações para manter atletas.",
     },
 ]
 
 
 app = FastAPI(
-    title="Transactions API",
+    title="API de Transações",
     version="1.0.0",
-    summary="Microservice to maintain withdrawal and deposit operations from current accounts.",
+    summary="Microsserviço para manter operações de saque e depósito de contas correntes.",
     description="""
-Transactions API is the microservice for recording current account transactions. 💸💰
+A API de Transações é o microsserviço para registrar transações de contas correntes. 💸💰
 
-## Account
+## Conta
 
-* **Create accounts**.
-* **List accounts**.
-* **List account transactions by ID**.
+* **Criar contas**.
+* **Listar contas**.
+* **Listar transações da conta por ID**.
 
-## Transaction
+## Transação
 
-* **Create transactions**.
+* **Criar transações**.
+
+## Atleta
+
+* **Criar atletas**.
+* **Listar atletas com filtros (nome, cpf)**.
+* **Paginação com limit e offset**.
 """,
     openapi_tags=tags_metadata,
     redoc_url=None,
