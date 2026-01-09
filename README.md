@@ -5,7 +5,8 @@ Uma API RESTful moderna e assíncrona construída com **FastAPI** para gerenciar
 ## 📋 O que é essa API?
 
 <img width="2752" height="1536" alt="image" src="https://github.com/user-attachments/assets/bd501a75-a0b9-48ba-ad6c-bbd21b2e918c" />
-<img width="524" height="272" alt="image" src="https://github.com/user-attachments/assets/12423b96-028d-43b0-9bcd-6516252b010e" />
+<img width="524" height="272" alt="image" src="https://github.com/user-attachments/assets/12423b96-028d-43b0-9bcd-6516252b010e" /> <img width="617" height="337" alt="image" src="https://github.com/user-attachments/assets/74b72614-49e1-4423-b787-fe57d8fefd07" />
+
 
 
 
