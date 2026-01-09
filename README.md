@@ -240,6 +240,8 @@ Este projeto é de código aberto e está disponível sob a licença MIT.
 
 ## 👤 Autor
 
+**Vitor Brandão Barbosa**
+
 Desenvolvido como desafio da **Trilha Python DIO - Guilherme Carvalho**
 
 ---
