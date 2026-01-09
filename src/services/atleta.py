@@ -2,7 +2,7 @@ from databases.interfaces import Record
 from sqlalchemy.exc import IntegrityError
 
 from src.database import database
-from src.models.atleta import athletes
+from src.models.athlete import athletes
 from src.schemas.athlete import AtletaIn
 
 
