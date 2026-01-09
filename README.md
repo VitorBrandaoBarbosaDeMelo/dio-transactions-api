@@ -168,13 +168,15 @@ curl -X POST "http://localhost:8000/atletas" \
 
 ## 📸 Screenshots
 
-### Tabela de Atletas
-Visualize todos os 8 atletas cadastrados:
-[![Tabela de Atletas](images/athletes_table.html)](images/athletes_table.html)
+### Documentação Swagger (OpenAPI)
+Visualize a documentação interativa da API:
 
-### Documentação Swagger
-Documentação interativa dos endpoints:
-[![Swagger Documentation](images/swagger_docs.html)](images/swagger_docs.html)
+![Swagger Documentation](images/swagger_docs.png)
+
+### Tabela de Atletas
+Lista completa dos 8 atletas cadastrados:
+
+![Athletes Table](images/athletes_table.png)
 
 ## 📁 Estrutura do Projeto
 
