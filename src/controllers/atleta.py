@@ -1,6 +1,4 @@
 from fastapi import APIRouter, Depends, HTTPException
-from fastapi_pagination import LimitOffsetPage, add_pagination, paginate
-from fastapi_pagination.params import LimitOffsetParams
 from sqlalchemy.exc import IntegrityError
 
 from src.schemas.athlete import AtletaIn
@@ -13,10 +11,9 @@ router = APIRouter(prefix="/atletas", dependencies=[Depends(login_required)])
 service = AtletaService()
 
 
-@router.get("/", response_model=LimitOffsetPage[AtletaOut])
-async def read_atletas(nome: str | None = None, cpf: str | None = None, params: LimitOffsetParams = Depends()):
-    records = await service.read_all(limit=params.limit, skip=params.offset, nome=nome, cpf=cpf)
-    return paginate(records, params)
+@router.get("/", response_model=list[AtletaOut])
+async def read_atletas(nome: str | None = None, cpf: str | None = None, limit: int = 10, offset: int = 0):
+    return await service.read_all(limit=limit, skip=offset, nome=nome, cpf=cpf)
 
 
 @router.post("/", response_model=AtletaOut)

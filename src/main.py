@@ -5,7 +5,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from src.controllers import account, auth, transaction, atleta
-from fastapi_pagination import add_pagination
 from src.database import database
 from src.exceptions import AccountNotFoundError, BusinessError
 
@@ -67,8 +66,6 @@ app.include_router(auth.router, tags=["auth"])
 app.include_router(account.router, tags=["account"])
 app.include_router(transaction.router, tags=["transaction"])
 app.include_router(atleta.router, tags=["atleta"])
-
-add_pagination(app)
 
 
 @app.exception_handler(AccountNotFoundError)
